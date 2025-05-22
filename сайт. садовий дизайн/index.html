@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Садовий Дизайн</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7eb;
+            color: #2f4f4f;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        header .title-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        header .title-container h1 {
+            font-size: 3rem;
+            margin: 0;
+            opacity: 0;
+        }
+
+        header .title-container p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 1.5rem;
+            opacity: 0;
+        }
+
+        header .title-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .content {
+            padding: 2rem;
+            line-height: 1.8;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonials {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .testimonial {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin: 0 0 0.5rem;
+        }
+
+        .testimonial cite {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .stars {
+            margin-top: 0.5rem;
+        }
+
+        .stars span {
+            color: gold;
+            font-size: 1.5rem;
+        }
+
+        .extra-section {
+            background-color: #4CAF50;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .extra-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .extra-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+
+        footer .social-icons a {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+
+        footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Group 36.png" alt="Фонове фото саду">
+        <div class="title-container">
+            <h1>Садовий Дизайн</h1>
+            <p>Перетворіть ваш простір на справжній витвір мистецтва.</p>
+            <button>Дізнатися більше</button>
+        </div>
+    </header>
+
+    <section class="content">
+        <h2>Про Садовий Дизайн</h2>
+        <p>Садовий дизайн — це поєднання мистецтва і науки, що дозволяє створити унікальний простір для відпочинку, роботи або натхнення. Вдало спланований сад підкреслить красу вашої території і зробить її затишною та функціональною.</p>
+        <p>Ми пропонуємо широкий спектр послуг: від створення декоративних клумб і водойм до облаштування сучасних садових доріжок. Довірте нам свій простір, і ми перетворимо його на витвір мистецтва.</p>
+        <div class="gallery">
+            <img src="b53781ec1e637abbfc656a0ef8545ca1.jpg" alt="Чудовий квітковий сад">
+            <img src="35e66356679e1f30ac7425d29287444a.jpg" alt="Сучасний садовий дизайн">
+            <img src="5d00ac939091672affe1482e0523d7e6.jpg" alt="Сільська садова доріжка">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Відгуки клієнтів</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Сад виглядає просто чудово! Дякую за професіоналізм і креативність."</p>
+                <cite>— Олена, Київ</cite>
+                <div class="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Найкращий сервіс! Наш сад став улюбленим місцем для відпочинку."</p>
+                <cite>— Андрій, Львів</cite>
+                <div class="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Дякую за професійний підхід і чудовий результат!"</p>
+                <cite>— Катерина, Одеса</cite>
+                <div class="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Результат перевершив очікування! Лише 4 зірочки за невеликі затримки."</p>
+                <cite>— Ігор, Харків</cite>
+                <div class="stars">
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="extra-section">
+        <h2>Наш Підхід</h2>
+        <p>Ми завжди орієнтовані на індивідуальні потреби наших клієнтів. Кожен проект розробляється з урахуванням вашого стилю, бюджету і побажань. Ваша мрія — наша місія.</p>
+    </section>
+
+    <footer>
+        <p>Адреса: м. Київ, вул. Зеленого Дизайну, 15</p>
+        <p>Години роботи: Пн-Пт 09:00 - 18:00</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/groups/292464374179226/?locale=ua_UA"><img src="facebook-app-round-white-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/landshaft__chernivtsi/?hl=uk"><img src="instagram-white-icon.png" alt="Instagram"></a>
+            <a href="https://twitter.com/gardendesigns02"><img src="x-social-media-white-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = [
+                document.querySelector("header .title-container h1"),
+                document.querySelector("header .title-container p"),
+                document.querySelector("header .title-container button"),
+                document.querySelector(".content")
+            ];
+
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = "1";
+                    el.style.transition = "opacity 1s";
+                }, index * 500);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
